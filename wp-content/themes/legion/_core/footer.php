@@ -1,0 +1,3 @@
+<div class="footer__inner">
+
+</div>
