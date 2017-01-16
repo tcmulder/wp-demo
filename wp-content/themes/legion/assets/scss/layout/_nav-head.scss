@@ -4,11 +4,12 @@
 .nav-head {
     &__wrap {
         overflow: hidden;
+        position: fixed;
+        z-index: 10;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        position: fixed;
         height: 0;
         &:after { // background on activation
             content: "";
@@ -85,7 +86,7 @@
 // "hamburger"
 .nav-head__trigger {
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     display: block;
     top: 0;
     width: 9.6em;

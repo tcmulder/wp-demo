@@ -3,6 +3,11 @@
     ------------------------------------*
     ::Normalize.css v3.0.0 | MIT License | git.io/normalize
 \*------------------------------------*/
+body { // text level semantics site-wide
+	color: $color-1--dark;
+	font-family: $fam--body;
+	font-size: 14px;
+}
 abbr[title] {
 	border-bottom: 1px dotted;
 }
@@ -13,10 +18,47 @@ strong {
 dfn {
 	font-style: italic;
 }
-h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+%all-headings {
+    font-weight: bold; // I know they're already bold but now you can extend non-headings
+    margin-bottom: .4rem;
+    margin-top: $gap--baby;
+    letter-spacing: .06em;
+    &:first-child {
+        margin-top: 0;
+    }
 }
+%h1 {
+    @extend %all-headings;
+    font-size: 6.5em;
+}
+%h2 {
+    @extend %all-headings;
+    @extend %h1;
+    color: $color-1--light;
+}
+%h3 {
+    @extend %all-headings;
+    font-size: 4.7em;
+}
+%h4 {
+    @extend %all-headings;
+    font-size: 2.3em;
+}
+%h5 {
+    @extend %all-headings;
+    font-size: 2em;
+}
+%h6 {
+    @extend %all-headings;
+    font-size: 1.8em;
+}
+// implementation
+h1{@extend %h1;}
+h2{@extend %h2;}
+h3{@extend %h3;}
+h4{@extend %h4;}
+h5{@extend %h5;}
+h6{@extend %h6;}
 mark {
 	background: #ff0;
 	color: #000;
