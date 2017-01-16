@@ -3,5 +3,6 @@
 \*------------------------------------*/
 .main-head {
     height: 100vh;
+    height: 10px; overflow: hidden; /*TEMP*/box-shadow:0 0 0 1px rgba(mediumaquamarine,.5) inset !important;background-color:rgba(mediumaquamarine,.5) !important;
     background-color: $color-3;
 }

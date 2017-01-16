@@ -13,3 +13,4 @@
       wp_nav_menu($attr);
     ?>
 </nav>
+<h1 class="main-head__offset-title">Build Something <span>Beautiful</span></h1>
