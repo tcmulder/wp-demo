@@ -1,10 +1,10 @@
 /* options */
 var $options = {
-        'url': 'yourwebsite.somewhere.dev',
+        'url': 'http://localhost',
         'sass': {
             'main': {
                 'input': ['scss/style.scss'],
-                'watch': ['scss/style.scss', 'scss/_components/**/*.scss'],
+                'watch': ['scss/style.scss', 'scss/**/*.scss',  'scss/_components/**/*.scss'],
                 'output': {
                     'directory': 'css',
                     'filename': 'style.css',
@@ -22,7 +22,7 @@ var $options = {
             },
             'vendor': {
                 'input': [
-        
+
             ],
                 'output': {
                     'directory': 'js/min',
@@ -51,6 +51,7 @@ var $options = {
             jshint = require('gulp-jshint'),
             stylish = require('jshint-stylish'),
             sass = require('gulp-sass'),
+            sassGlob = require('gulp-sass-glob'),
             merge = require('merge-stream'),
             concat = require('gulp-concat'),
             uglify = require('gulp-uglify'),
@@ -115,6 +116,7 @@ var $options = {
         $compilers.sass = function ($files) {
 
             return gulp.src($files.input)
+                .pipe(sassGlob())
                 .pipe(plumber($options.errors))
                 .pipe(sourcemaps.init())
                 .pipe(sass($options.sassOptions))
@@ -156,6 +158,7 @@ var $options = {
          */
         gulp.task('sass__production', function () {
             return gulp.src($options.sass.main)
+                .pipe(sassGlob())
                 .pipe(changed('css'))
                 .pipe(plumber($options.errors))
                 .pipe(sass($options.sassOptions))
