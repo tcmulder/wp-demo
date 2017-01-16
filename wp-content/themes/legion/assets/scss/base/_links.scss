@@ -5,8 +5,12 @@
 \*------------------------------------*/
 a {
 	background: transparent;
+    text-decoration: none;
+    color: $color-3;
+    transition: color 300ms;
 }
 a:active,
 a:hover {
     outline: 0;
+    color: $color-3--light;
 }
