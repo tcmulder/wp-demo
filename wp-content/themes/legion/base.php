@@ -1,4 +1,4 @@
-<?php header('Content-type: text/html; charset=utf-8'); 
+<?php header('Content-type: text/html; charset=utf-8');
 	if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE') !== false)){
 		header('X-UA-Compatible: IE=edge,chrome=1');
 	}
@@ -18,21 +18,21 @@ use Roots\Sage\Wrapper;
           <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
         </div>
       <![endif]-->
-      
-      <header class="header header--js" id="top">
+
+      <header class="main-head" id="top">
         <?php
           do_action('get_header');
           get_template_part('_core/header');
         ?>
       </header>
 
-      <main id="main" class="main wrapper">
-        <div class="main__inner">
+      <main id="main" class="main-torso wrapper">
+        <div class="main-torso__inner">
           <?php include Wrapper\template_path(); ?>
         </div>
       </main>
-      
-      <footer class="footer">
+
+      <footer class="main-foot">
         <?php get_template_part('_core/footer'); ?>
       </footer>
 
