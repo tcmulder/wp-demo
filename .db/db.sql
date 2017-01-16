@@ -133,7 +133,7 @@ CREATE TABLE `d503h1e7s1_options` (
   `autoload` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=179 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=180 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -253,7 +253,7 @@ INSERT INTO `d503h1e7s1_options` VALUES (113,'_site_transient_browser_dff177876e
 INSERT INTO `d503h1e7s1_options` VALUES (114,'can_compress_scripts','1','no');
 INSERT INTO `d503h1e7s1_options` VALUES (132,'theme_mods_twentyseventeen','a:1:{s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1484423026;s:4:\"data\";a:4:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:9:\"sidebar-2\";a:0:{}s:9:\"sidebar-3\";a:0:{}}}}','yes');
 INSERT INTO `d503h1e7s1_options` VALUES (133,'current_theme','Legion','yes');
-INSERT INTO `d503h1e7s1_options` VALUES (134,'theme_mods_legion','a:2:{i:0;b:0;s:18:\"custom_css_post_id\";i:-1;}','yes');
+INSERT INTO `d503h1e7s1_options` VALUES (134,'theme_mods_legion','a:3:{i:0;b:0;s:18:\"custom_css_post_id\";i:-1;s:18:\"nav_menu_locations\";a:1:{s:7:\"ap_main\";i:2;}}','yes');
 INSERT INTO `d503h1e7s1_options` VALUES (135,'theme_switched','','yes');
 INSERT INTO `d503h1e7s1_options` VALUES (136,'recently_activated','a:0:{}','yes');
 INSERT INTO `d503h1e7s1_options` VALUES (137,'_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a','1484434038','no');
@@ -277,6 +277,7 @@ INSERT INTO `d503h1e7s1_options` VALUES (173,'_transient_timeout_plugin_slugs','
 INSERT INTO `d503h1e7s1_options` VALUES (174,'_transient_plugin_slugs','a:4:{i:0;s:30:\"advanced-custom-fields/acf.php\";i:1;s:21:\"imsanity/imsanity.php\";i:2;s:41:\"simple-image-sizes/simple_image_sizes.php\";i:3;s:31:\"what-the-file/what-the-file.php\";}','no');
 INSERT INTO `d503h1e7s1_options` VALUES (177,'_site_transient_timeout_theme_roots','1484578864','no');
 INSERT INTO `d503h1e7s1_options` VALUES (178,'_site_transient_theme_roots','a:1:{s:6:\"legion\";s:7:\"/themes\";}','no');
+INSERT INTO `d503h1e7s1_options` VALUES (179,'nav_menu_options','a:2:{i:0;b:0;s:8:\"auto_add\";a:0:{}}','yes');
 /*!40000 ALTER TABLE `d503h1e7s1_options` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -295,7 +296,7 @@ CREATE TABLE `d503h1e7s1_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -307,6 +308,30 @@ LOCK TABLES `d503h1e7s1_postmeta` WRITE;
 INSERT INTO `d503h1e7s1_postmeta` VALUES (1,2,'_wp_page_template','default');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (2,2,'_edit_last','1');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (3,2,'_edit_lock','1484423738:1');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (4,5,'_menu_item_type','custom');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (5,5,'_menu_item_menu_item_parent','0');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (6,5,'_menu_item_object_id','5');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (7,5,'_menu_item_object','custom');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (8,5,'_menu_item_target','');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (9,5,'_menu_item_classes','a:1:{i:0;s:0:\"\";}');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (10,5,'_menu_item_xfn','');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (11,5,'_menu_item_url','http://localhost/about');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (13,6,'_menu_item_type','custom');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (14,6,'_menu_item_menu_item_parent','0');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (15,6,'_menu_item_object_id','6');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (16,6,'_menu_item_object','custom');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (17,6,'_menu_item_target','');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (18,6,'_menu_item_classes','a:1:{i:0;s:0:\"\";}');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (19,6,'_menu_item_xfn','');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (20,6,'_menu_item_url','http://localhost/portfolio');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (22,7,'_menu_item_type','custom');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (23,7,'_menu_item_menu_item_parent','0');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (24,7,'_menu_item_object_id','7');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (25,7,'_menu_item_object','custom');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (26,7,'_menu_item_target','');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (27,7,'_menu_item_classes','a:1:{i:0;s:0:\"\";}');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (28,7,'_menu_item_xfn','');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (29,7,'_menu_item_url','http://localhost/contact');
 /*!40000 ALTER TABLE `d503h1e7s1_postmeta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -346,7 +371,7 @@ CREATE TABLE `d503h1e7s1_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -359,6 +384,9 @@ INSERT INTO `d503h1e7s1_posts` VALUES (1,1,'2017-01-14 19:43:09','2017-01-14 19:
 INSERT INTO `d503h1e7s1_posts` VALUES (2,1,'2017-01-14 19:43:09','2017-01-14 19:43:09','This is an example page. It\'s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\n\n<blockquote>Hi there! I\'m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin\' caught in the rain.)</blockquote>\n\n...or something like this:\n\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\n\nAs a new WordPress user, you should go to <a href=\"http://localhost/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!','Home','','publish','closed','closed','','home','','','2017-01-14 19:55:38','2017-01-14 19:55:38','',0,'http://localhost/?page_id=2',0,'page','',0);
 INSERT INTO `d503h1e7s1_posts` VALUES (3,1,'2017-01-14 19:43:12','0000-00-00 00:00:00','','Auto Draft','','auto-draft','open','open','','','','','2017-01-14 19:43:12','0000-00-00 00:00:00','',0,'http://localhost/?p=3',0,'post','',0);
 INSERT INTO `d503h1e7s1_posts` VALUES (4,1,'2017-01-14 19:55:38','2017-01-14 19:55:38','This is an example page. It\'s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\n\n<blockquote>Hi there! I\'m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin\' caught in the rain.)</blockquote>\n\n...or something like this:\n\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\n\nAs a new WordPress user, you should go to <a href=\"http://localhost/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!','Home','','inherit','closed','closed','','2-revision-v1','','','2017-01-14 19:55:38','2017-01-14 19:55:38','',2,'http://localhost/2017/01/14/2-revision-v1/',0,'revision','',0);
+INSERT INTO `d503h1e7s1_posts` VALUES (5,1,'2017-01-16 16:55:36','2017-01-16 16:55:36','','About','','publish','closed','closed','','about','','','2017-01-16 16:58:16','2017-01-16 16:58:16','',0,'http://localhost/?p=5',1,'nav_menu_item','',0);
+INSERT INTO `d503h1e7s1_posts` VALUES (6,1,'2017-01-16 16:55:36','2017-01-16 16:55:36','','Portfolio','','publish','closed','closed','','portfolio','','','2017-01-16 16:58:16','2017-01-16 16:58:16','',0,'http://localhost/?p=6',2,'nav_menu_item','',0);
+INSERT INTO `d503h1e7s1_posts` VALUES (7,1,'2017-01-16 16:55:36','2017-01-16 16:55:36','','Contact','','publish','closed','closed','','contact','','','2017-01-16 16:58:16','2017-01-16 16:58:16','',0,'http://localhost/?p=7',3,'nav_menu_item','',0);
 /*!40000 ALTER TABLE `d503h1e7s1_posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -385,6 +413,9 @@ CREATE TABLE `d503h1e7s1_term_relationships` (
 LOCK TABLES `d503h1e7s1_term_relationships` WRITE;
 /*!40000 ALTER TABLE `d503h1e7s1_term_relationships` DISABLE KEYS */;
 INSERT INTO `d503h1e7s1_term_relationships` VALUES (1,1,0);
+INSERT INTO `d503h1e7s1_term_relationships` VALUES (5,2,0);
+INSERT INTO `d503h1e7s1_term_relationships` VALUES (6,2,0);
+INSERT INTO `d503h1e7s1_term_relationships` VALUES (7,2,0);
 /*!40000 ALTER TABLE `d503h1e7s1_term_relationships` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -405,7 +436,7 @@ CREATE TABLE `d503h1e7s1_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -415,6 +446,7 @@ CREATE TABLE `d503h1e7s1_term_taxonomy` (
 LOCK TABLES `d503h1e7s1_term_taxonomy` WRITE;
 /*!40000 ALTER TABLE `d503h1e7s1_term_taxonomy` DISABLE KEYS */;
 INSERT INTO `d503h1e7s1_term_taxonomy` VALUES (1,1,'category','',0,1);
+INSERT INTO `d503h1e7s1_term_taxonomy` VALUES (2,2,'nav_menu','',0,3);
 /*!40000 ALTER TABLE `d503h1e7s1_term_taxonomy` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -460,7 +492,7 @@ CREATE TABLE `d503h1e7s1_terms` (
   PRIMARY KEY (`term_id`),
   KEY `slug` (`slug`(191)),
   KEY `name` (`name`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -470,6 +502,7 @@ CREATE TABLE `d503h1e7s1_terms` (
 LOCK TABLES `d503h1e7s1_terms` WRITE;
 /*!40000 ALTER TABLE `d503h1e7s1_terms` DISABLE KEYS */;
 INSERT INTO `d503h1e7s1_terms` VALUES (1,'Uncategorized','uncategorized',0);
+INSERT INTO `d503h1e7s1_terms` VALUES (2,'main','main',0);
 /*!40000 ALTER TABLE `d503h1e7s1_terms` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -488,7 +521,7 @@ CREATE TABLE `d503h1e7s1_usermeta` (
   PRIMARY KEY (`umeta_id`),
   KEY `user_id` (`user_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -505,7 +538,7 @@ INSERT INTO `d503h1e7s1_usermeta` VALUES (5,1,'rich_editing','true');
 INSERT INTO `d503h1e7s1_usermeta` VALUES (6,1,'comment_shortcuts','false');
 INSERT INTO `d503h1e7s1_usermeta` VALUES (7,1,'admin_color','fresh');
 INSERT INTO `d503h1e7s1_usermeta` VALUES (8,1,'use_ssl','0');
-INSERT INTO `d503h1e7s1_usermeta` VALUES (9,1,'show_admin_bar_front','true');
+INSERT INTO `d503h1e7s1_usermeta` VALUES (9,1,'show_admin_bar_front','false');
 INSERT INTO `d503h1e7s1_usermeta` VALUES (10,1,'locale','');
 INSERT INTO `d503h1e7s1_usermeta` VALUES (11,1,'d503h1e7s1_capabilities','a:1:{s:13:\"administrator\";b:1;}');
 INSERT INTO `d503h1e7s1_usermeta` VALUES (12,1,'d503h1e7s1_user_level','10');
@@ -515,6 +548,8 @@ INSERT INTO `d503h1e7s1_usermeta` VALUES (15,1,'session_tokens','a:1:{s:64:\"9db
 INSERT INTO `d503h1e7s1_usermeta` VALUES (16,1,'d503h1e7s1_user-settings','libraryContent=browse&editor=tinymce&imgsize=third&align=center&editor_expand=off&hidetb=1&urlbutton=none&advImgDetails=show&posts_list_mode=list');
 INSERT INTO `d503h1e7s1_usermeta` VALUES (17,1,'d503h1e7s1_user-settings-time','1484422986');
 INSERT INTO `d503h1e7s1_usermeta` VALUES (18,1,'d503h1e7s1_dashboard_quick_press_last_post_id','3');
+INSERT INTO `d503h1e7s1_usermeta` VALUES (19,1,'managenav-menuscolumnshidden','a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}');
+INSERT INTO `d503h1e7s1_usermeta` VALUES (20,1,'metaboxhidden_nav-menus','a:2:{i:0;s:12:\"add-post_tag\";i:1;s:15:\"add-post_format\";}');
 /*!40000 ALTER TABLE `d503h1e7s1_usermeta` ENABLE KEYS */;
 UNLOCK TABLES;
 

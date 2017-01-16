@@ -13,28 +13,32 @@ use Roots\Sage\Wrapper;
 
     <body <?php body_class(); ?>>
 
-      <!--[if lt IE 9]>
-        <div class="alert alert__warning">
-          <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
-        </div>
-      <![endif]-->
+      <div class="wrap-all-the-things">
 
-      <header class="main-head" id="top">
-        <?php
-          do_action('get_header');
-          get_template_part('_core/header');
-        ?>
-      </header>
+        <!--[if lt IE 9]>
+          <div class="alert alert__warning">
+            <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
+          </div>
+        <![endif]-->
 
-      <main id="main" class="main-torso wrapper">
-        <div class="main-torso__inner">
-          <?php include Wrapper\template_path(); ?>
-        </div>
-      </main>
+        <header class="main-head" id="top">
+          <?php
+            do_action('get_header');
+            get_template_part('_core/header');
+          ?>
+        </header>
 
-      <footer class="main-foot">
-        <?php get_template_part('_core/footer'); ?>
-      </footer>
+        <main id="main" class="main-torso wrapper">
+          <div class="main-torso__inner">
+            <?php include Wrapper\template_path(); ?>
+          </div>
+        </main>
+
+        <footer class="main-foot">
+          <?php get_template_part('_core/footer'); ?>
+        </footer>
+
+      </div>
 
       <?php do_action('get_footer'); ?>
       <?php wp_footer(); ?>

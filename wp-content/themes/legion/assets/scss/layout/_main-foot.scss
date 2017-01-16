@@ -1,3 +1,12 @@
 /*------------------------------------*\
     ::Main Footer
 \*------------------------------------*/
+@include sticky-footer(
+    $wrap: '.wrap-all-the-things',
+    $row:  '.main-head, .main-torso, .main-foot',
+    $flex: '.main-torso'
+);
+.main-foot {
+    /*TEMP*/box-shadow:0 0 0 1px rgba(mediumaquamarine,.5) inset;background-color:rgba(mediumaquamarine,.5);
+    text-align: center;
+}

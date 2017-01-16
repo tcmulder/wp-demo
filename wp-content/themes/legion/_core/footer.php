@@ -1,3 +1,3 @@
-<div class="footer__inner">
-
+<div class="main-foot__inner">
+    ...
 </div>
