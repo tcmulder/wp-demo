@@ -93,6 +93,7 @@
     height: 9.6em;
     padding-top: 4.2em;
     background-color: rgba(#fff,.1);
+    border: 1px solid rgba(#000,.04); // gives it some contrast on white backgrounds
     span {
         position: absolute;
         top: 50%;
