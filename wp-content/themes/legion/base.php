@@ -21,7 +21,7 @@ use Roots\Sage\Wrapper;
           </div>
         <![endif]-->
 
-        <header class="main-head" id="top">
+        <header class="main-head main-head--angle-bottom" id="top">
           <?php
             do_action('get_header');
             get_template_part('_core/header');
