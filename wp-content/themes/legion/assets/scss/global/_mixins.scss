@@ -11,6 +11,7 @@
     ::Changing grid-column to col
     ::Sticky Footer
     ::Nav
+    ::Nav Selectors
 \*------------------------------------*/
 
 /*------------------------------------*\
@@ -291,6 +292,86 @@
                     }
                 }
             }
+        }
+    }
+}
+
+/*------------------------------------*\
+    ::Nav Selectors
+\*------------------------------------*/
+//Usage:
+// Just copy and paste all of the following
+// into an appropriate container and
+// breakpoint, like:
+//
+// .main-nav {
+//     @include bp($solarsystem){
+//         @include nav-all-li {}
+//         @include nav-all-a {}
+//         @include nav-primary-ul {}
+//         @include nav-primary-li {}
+//         @include nav-primary-a {}
+//         @include nav-secondary-ul {}
+//         @include nav-secondary-li {}
+//         @include nav-secondary-a {}
+//     }
+// }
+//
+// then add styles within the curly braces
+// of any appropriate selector. Just leave
+// the rest of the selectors in the
+// stylesheet, but leave them empty so
+// they're available if needed later; since
+// there's nothing in them, they won't output
+// anything or lead to bloat.
+
+@mixin nav-all-li() {
+    & li {
+        @content;
+    }
+}
+@mixin nav-all-a() {
+    & a {
+        @content;
+    }
+}
+@mixin nav-primary-ul() {
+    & > ul {
+        @content;
+    }
+}
+@mixin nav-primary-li() {
+    @include nav-primary-ul(){
+        & > li {
+            @content;
+        }
+    }
+}
+@mixin nav-primary-a() {
+    @include nav-primary-li(){
+        & > a {
+            @content;
+        }
+    }
+}
+@mixin nav-secondary-ul() {
+    @include nav-primary-li(){
+        & > ul {
+            @content;
+        }
+    }
+}
+@mixin nav-secondary-li() {
+    @include nav-secondary-ul(){
+        & > li {
+            @content;
+        }
+    }
+}
+@mixin nav-secondary-a() {
+    @include nav-secondary-li(){
+        & > a {
+            @content;
         }
     }
 }

@@ -2,5 +2,6 @@
     ::Main Head
 \*------------------------------------*/
 .main-head {
-    /*TEMP*/box-shadow:0 0 0 1px rgba(red,.5) inset;background-color:rgba(red,.5);
+    height: 100vh;
+    background-color: $color-3;
 }
