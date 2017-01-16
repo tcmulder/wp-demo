@@ -43,6 +43,9 @@ var $options = {
         },
         'autoprefixerOptions': {
             'browsers': ['last 2 versions', '> 5%', 'Firefox ESR']
+        },
+        'php': {
+            'watch': '../**/*.php'
         }
       };
 
@@ -129,6 +132,12 @@ var $options = {
                 }));
         }
 
+        $compilers.php = function ($files) {
+
+            return gulp.src($files.watch)
+                .pipe(reload());
+        }
+
         /* Tasks */
         gulp.task('scripts_main', function () {
             return $compilers.javascript($options.javascript.main);
@@ -142,6 +151,10 @@ var $options = {
 
         gulp.task('sass_main', function () {
             return $compilers.sass($options.sass.main)
+        });
+
+        gulp.task('php_main', function () {
+            return $compilers.php($options.php)
         });
 
         // Lint Task
@@ -179,6 +192,7 @@ var $options = {
         gulp.task('watch', function () {
             gulp.watch($options.javascript.main.input, ['scripts_main']);
             gulp.watch($options.sass.main.watch, ['sass_main']);
+            gulp.watch($options.php.watch, ['sass_main']);
         });
 
         // Task Groups (Development)
