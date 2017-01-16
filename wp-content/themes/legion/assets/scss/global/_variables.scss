@@ -7,6 +7,7 @@
     ::Text Styling
 \*------------------------------------*/
 
+
 /*------------------------------------*\
     ::Colors
 \*------------------------------------*/
@@ -27,13 +28,15 @@ $color-3--light:    lighten($color-3,20%);
 $color-3--dark:     darken($color-3,20%);
 
 //alert colors
-$color-good:        #6ade72;
-$color-bad:         $color-3;
-$color-meh:         $color-1;
+$color--good:        #6ade72;
+$color--bad:         $color-3;
+$color--meh:         $color-1;
+
 
 /*------------------------------------*\
     ::Layout
 \*------------------------------------*/
+
 $row-width:         1440px; // essentially full-width page
 
 $pad:               0.9375rem;
@@ -44,6 +47,7 @@ $gap--baby:         $gap*1.5;
 $gap-em:            0.9375em;
 $gap-em--big:       $gap-em*2;
 $gap-em--baby:      $gap-em*1.5;
+
 
 /*------------------------------------*\
     ::Breakpoints
@@ -61,11 +65,12 @@ $desk--max:         $row-width;
 $desk--min:         $tab--max + 1;
 $desk--mid:         round($desk--min + ($desk--max - $desk--min)/2);
 
+
 /*------------------------------------*\
     ::Text Styling
 \*------------------------------------*/
 
 //font families
-$fam-heading:       'Droid Sans', sans-serif;
-$fam-body:          'Open Sans', sans-serif;
-$fam-nav:           $fam-body;
+$fam--heading:       'Droid Sans', sans-serif;
+$fam--body:          'Open Sans', sans-serif;
+$fam--nav:           $fam--body;
