@@ -32,7 +32,7 @@ use Roots\Sage\Wrapper;
             <?php include Wrapper\template_path(); ?>
         </main>
 
-        <footer class="main-foot">
+        <footer class="main-foot main-foot--bg-drab">
           <?php get_template_part('_core/footer'); ?>
         </footer>
 

@@ -7,6 +7,12 @@
     $flex: '.main-torso'
 );
 .main-foot {
-    /*TEMP*/box-shadow:0 0 0 1px rgba(mediumaquamarine,.5) inset;background-color:rgba(mediumaquamarine,.5);
+    box-shadow: 0 0 20px rgba(#000, .1) inset;
     text-align: center;
+    &__inner {
+        padding: $gap--big $gap;
+    }
+    h2 {
+        @extend %h6;
+    }
 }

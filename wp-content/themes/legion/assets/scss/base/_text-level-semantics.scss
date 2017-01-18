@@ -23,6 +23,7 @@ dfn {
     margin-bottom: .4rem;
     margin-top: $gap--baby;
     letter-spacing: .06em;
+    color: $color-1--dark;
     &:first-child {
         margin-top: 0;
     }
@@ -51,6 +52,7 @@ dfn {
 %h6 {
     @extend %all-headings;
     font-size: 1.8em;
+    letter-spacing: -.01em;
 }
 // implementation
 h1{@extend %h1;}
