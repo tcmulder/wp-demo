@@ -1,95 +1,95 @@
 /*------------------------------------*\
-    ::Text Level Semantics
-    ------------------------------------*
-    ::Normalize.css v3.0.0 | MIT License | git.io/normalize
+  ::Text Level Semantics
+  ------------------------------------*
+  ::Normalize.css v3.0.0 | MIT License | git.io/normalize
 \*------------------------------------*/
 body { // text level semantics site-wide
-	color: $color-1--dark;
-	font-family: $fam--body;
-	font-size: 14px;
+  color: $color-1--dark;
+  font-family: $fam--body;
+  font-size: 14px;
 }
 abbr[title] {
-	border-bottom: 1px dotted;
+  border-bottom: 1px dotted;
 }
 b,
 strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 dfn {
-	font-style: italic;
+  font-style: italic;
 }
 %all-headings {
-    font-weight: bold; // I know they're already bold but now you can extend non-headings
-    margin-bottom: .4rem;
-    margin-top: $gap--baby;
-    letter-spacing: .06em;
-    text-align: center;
-    color: $color-1--dark;
-    &:first-child {
-        margin-top: 0;
-    }
+  font-weight: bold; // I know they're already bold but now you can extend non-headings
+  margin-bottom: .4rem;
+  margin-top: $gap--baby;
+  letter-spacing: .06em;
+  text-align: center;
+  color: $color-1--dark;
+  &:first-child {
+    margin-top: 0;
+  }
 }
 %h1 {
-    $font-size: 6.5em;
-    @extend %all-headings;
-    font-size: $font-size;
-    @include bp($tab--max){
-        font-size: $font-size*.8;
-    }
-    @include bp($phone--max){
-        font-size: $font-size*.5;
-    }
+  $font-size: 6.5em;
+  @extend %all-headings;
+  font-size: $font-size;
+  @include bp($tab--max){
+    font-size: $font-size*.8;
+  }
+  @include bp($phone--max){
+    font-size: $font-size*.5;
+  }
 }
 %h2 {
-    @extend %all-headings;
-    @extend %h1;
-    color: $color-1--light;
+  @extend %all-headings;
+  @extend %h1;
+  color: $color-1--light;
 }
 %h3 {
-    $font-size: 4.7em;
-    @extend %all-headings;
-    letter-spacing: .1em;
-    font-size: $font-size;
-    @include bp($tab--max){
-        font-size: $font-size*.7;
-    }
-    @include bp($phone--max){
-        font-size: $font-size*.5;
-    }
+  $font-size: 4.7em;
+  @extend %all-headings;
+  letter-spacing: .1em;
+  font-size: $font-size;
+  @include bp($tab--max){
+    font-size: $font-size*.7;
+  }
+  @include bp($phone--max){
+    font-size: $font-size*.5;
+  }
 }
 %h4 {
-    $font-size: 2.3em;
-    @extend %all-headings;
-    font-size: $font-size;
-    @include bp($tab--max){
-        font-size: $font-size*.9;
-    }
-    @include bp($phone--max){
-        font-size: $font-size*.75;
-    }
+  $font-size: 2.3em;
+  @extend %all-headings;
+  font-size: $font-size;
+  @include bp($tab--max){
+    font-size: $font-size*.9;
+  }
+  @include bp($phone--max){
+    font-size: $font-size*.75;
+  }
 }
 %h5 {
-    $font-size: 2em;
-    @extend %all-headings;
-    font-size: $font-size;
-    @include bp($tab--max){
-        font-size: $font-size*.9;
-    }
-    @include bp($phone--max){
-        font-size: $font-size*.75;
-    }
+  $font-size: 2em;
+  @extend %all-headings;
+  font-size: $font-size;
+  @include bp($tab--max){
+    font-size: $font-size*.9;
+  }
+  @include bp($phone--max){
+    font-size: $font-size*.75;
+  }
 }
 %h6 {
-    $font-size: 1.8em;
-    @extend %all-headings;
-    letter-spacing: -.01em;
-    font-size: $font-size;
-    @include bp($tab--max){
-        font-size: $font-size*.9;
-    }
-    @include bp($phone--max){
-        font-size: $font-size*.75;
-    }
+  $font-size: 1.8em;
+  @extend %all-headings;
+  letter-spacing: -.01em;
+  font-size: $font-size;
+  @include bp($tab--max){
+    font-size: $font-size*.9;
+  }
+  @include bp($phone--max){
+    font-size: $font-size*.75;
+  }
 }
 // implementation
 h1{@extend %h1;}
@@ -99,22 +99,22 @@ h4{@extend %h4;}
 h5{@extend %h5;}
 h6{@extend %h6;}
 mark {
-	background: #ff0;
-	color: #000;
+  background: #ff0;
+  color: #000;
 }
 small {
-	font-size: 80%;
+  font-size: 80%;
 }
 sub,
 sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
 }
 sup {
-	top: -0.5em;
+  top: -0.5em;
 }
 sub {
-	bottom: -0.25em;
+  bottom: -0.25em;
 }
