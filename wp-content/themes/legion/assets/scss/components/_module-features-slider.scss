@@ -3,8 +3,38 @@
 \*------------------------------------*/
 .features-slider {
     &__inner {
-        max-width: 970px;
+        position: relative;
+        max-width: 820px;
         margin-bottom: 100px;
+        // $color-1--light: mediumaquamarine; /* DEBUG */
+        &:before, // fade, so the slide doesn't get eaten by a hard line
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            bottom: 0;
+            width: 10em;
+            @include bp($tab--max){
+                font-size: .5em;
+            }
+            @include bp($phone--max){
+                font-size: .2em;
+            }
+        }
+        &:before {
+            left: 0;
+            box-shadow:
+                2em 0 1em -1.5em $color-1--light inset,
+                4em 0 4em -1.5em $color-1--light inset;
+        }
+        &:after {
+            right: 0;
+            box-shadow:
+                -2em 0 1em -1.5em $color-1--light inset,
+                -4em 0 4em -1.5em $color-1--light inset;
+        }
     }
     &__slide {
         width: 100%;
