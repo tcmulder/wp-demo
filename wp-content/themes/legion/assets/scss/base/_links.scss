@@ -1,16 +1,16 @@
 /*------------------------------------*\
-    ::Links
-    ------------------------------------*
-    ::Normalize.css v3.0.0 | MIT License | git.io/normalize
+  ::Links
+  ------------------------------------*
+  ::Normalize.css v3.0.0 | MIT License | git.io/normalize
 \*------------------------------------*/
 a {
-	background: transparent;
-    text-decoration: none;
-    color: $color-3;
-    transition: color 300ms;
+  background: transparent;
+  text-decoration: none;
+  color: $color-3;
+  transition: color 300ms;
 }
 a:active,
 a:hover {
-    outline: 0;
-    color: $color-3--light;
+  outline: 0;
+  color: $color-3--light;
 }

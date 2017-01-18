@@ -1,79 +1,79 @@
 /*------------------------------------*\
-    ::Slider Module
+  ::Slider Module
 \*------------------------------------*/
 .features-slider {
-    &__inner {
-        position: relative;
-        max-width: 820px;
-        margin-bottom: 100px;
-        // $color-1--light: mediumaquamarine; /* DEBUG */
-        &:before, // fade, so the slide doesn't get eaten by a hard line
-        &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            z-index: 10;
-            top: 0;
-            bottom: 0;
-            width: 10em;
-            @include bp($tab--max){
-                font-size: .5em;
-            }
-            @include bp($phone--max){
-                font-size: .2em;
-            }
-        }
-        &:before {
-            left: 0;
-            box-shadow:
-                2em 0 1em -1.5em $color-1--light inset,
-                4em 0 4em -1.5em $color-1--light inset;
-        }
-        &:after {
-            right: 0;
-            box-shadow:
-                -2em 0 1em -1.5em $color-1--light inset,
-                -4em 0 4em -1.5em $color-1--light inset;
-        }
+  &__inner {
+    position: relative;
+    max-width: 820px;
+    margin-bottom: 100px;
+    // $color-1--light: mediumaquamarine; /* DEBUG */
+    &:before, // fade, so the slide doesn't get eaten by a hard line
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      bottom: 0;
+      width: 10em;
+      @include bp($tab--max){
+        font-size: .5em;
+      }
+      @include bp($phone--max){
+        font-size: .2em;
+      }
     }
-    &__slide {
-        width: 100%;
-        padding-bottom: 75%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+    &:before {
+      left: 0;
+      box-shadow:
+        2em 0 1em -1.5em $color-1--light inset,
+        4em 0 4em -1.5em $color-1--light inset;
     }
-    // plugin customizations for flickity
-    .flickity-page-dots {
-        bottom: 1em;
-        @include bp($phone--max){
-            bottom: -.5em;
-        }
+    &:after {
+      right: 0;
+      box-shadow:
+        -2em 0 1em -1.5em $color-1--light inset,
+        -4em 0 4em -1.5em $color-1--light inset;
     }
-    .dot {
-        width: .9em;
-        height: .9em;
-        margin: 0 .9em;
-        background-color: $color-3;
-        opacity: 1;
-        transition: background-color 300ms;
-        @include bp($phone--mid){
-            margin: 0 3%;
-        }
-        &:hover {
-            background-color: $color-1--dark;
-        }
-        &.is-selected {
-            animation: blip 300ms;
-            background-color: $color-1--dark;
-        }
-        @keyframes blip {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-        }
+  }
+  &__slide {
+    width: 100%;
+    padding-bottom: 75%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  // plugin customizations for flickity
+  .flickity-page-dots {
+    bottom: 1em;
+    @include bp($phone--max){
+      bottom: -.5em;
     }
+  }
+  .dot {
+    width: .9em;
+    height: .9em;
+    margin: 0 .9em;
+    background-color: $color-3;
+    opacity: 1;
+    transition: background-color 300ms;
+    @include bp($phone--mid){
+      margin: 0 3%;
+    }
+    &:hover {
+      background-color: $color-1--dark;
+    }
+    &.is-selected {
+      animation: blip 300ms;
+      background-color: $color-1--dark;
+    }
+    @keyframes blip {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+  }
 }
