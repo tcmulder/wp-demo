@@ -27,6 +27,17 @@
     max-width: 685px;
 }
 
+// (demo note: usually i'd have reusable --margin-bottom/--padding-bottom and the same for top)
+[class*="--margin-bottom"] {
+    margin-bottom: $gap--big*3;
+    @include bp($tab--max){
+        margin-bottom: $gap--big*2;
+    }
+    @include bp($phone--max){
+        margin-bottom: $gap;
+    }
+}
+
 
 /*------------------------------------*\
     ::Special

@@ -6,7 +6,8 @@
      * than hard-coding the order like this.
      */
     ?>
-    <?php get_template_part('templates/modules/module', 'slider'); ?>
+    <?php get_template_part('templates/modules/module', 'features-slider'); ?>
+    <?php get_template_part('templates/modules/module', 'grid-gallery'); ?>
 <?php else : ?>
     <?php the_title(); ?>
     <?php the_content(); ?>
