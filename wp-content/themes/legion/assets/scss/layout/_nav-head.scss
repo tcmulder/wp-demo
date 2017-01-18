@@ -11,7 +11,7 @@
     right: 0;
     bottom: 0;
     height: 0;
-    &:after { // background on activation
+    &:after { // background (gains height on activation)
       content: "";
       position: absolute;
       top: -10vw;
@@ -83,6 +83,7 @@
     }
   }
 }
+
 // "hamburger"
 .nav-head__trigger {
   position: fixed;
