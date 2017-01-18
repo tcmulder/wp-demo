@@ -3,6 +3,7 @@
     Read all about it:
     http://csswizardry.com/2013/04/shame-css/
 \*------------------------------------*/
+
 /*------------------------------------*\
     ::Body Breakpoint Debugger
 \*------------------------------------*/
@@ -18,8 +19,3 @@ body {
     @include bp($phone--mid){ &:before { content: "$phone--mid"; } }
     @include bp($phone--min){ &:before { content: "$phone--min"; } }
 }
-
-/*------------------------------------*\
-    ::Temp Dev Resets
-\*------------------------------------*/
-// .main-head--angle-bottom { height: 10px !important; overflow: hidden !important; &:after { display: none !important; } }

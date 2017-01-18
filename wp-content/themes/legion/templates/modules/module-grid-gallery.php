@@ -6,6 +6,7 @@
         <div class="grid-gallery__frame">
             <?php for ($i=1; $i <= 4; $i++) : ?>
                 <?php $item_image = get_field('grid_gallery_image_'.$i); ?>
+                <?php $item_link = get_field('grid_gallery_link_'.$i); ?>
                 <?php $item_overlay = get_field('grid_gallery_overlay_'.$i); ?>
                 <?php if ($item_image || $item_overlay) : ?>
                     <?php
@@ -22,7 +23,7 @@
                             $bg_style = $bg_image['styles']; // set up the <style> tag
                         }
                     ?>
-                    <div class="grid-gallery__item <?php echo $bg_class; ?>">
+                    <a href="<?php echo $item_link; ?>" class="grid-gallery__item <?php echo $bg_class; ?>">
                         <?php echo $bg_style; ?>
                         <?php if($item_overlay) : ?>
                             <div class="grid-gallery__overlay">
@@ -34,7 +35,7 @@
                                 ?>
                             </div>
                         <?php endif; ?>
-                    </div>
+                    </a>
                 <?php else : ?>
                     <?php break; ?>
                 <?php endif ?>
