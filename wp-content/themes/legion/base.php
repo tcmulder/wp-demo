@@ -21,20 +21,16 @@ use Roots\Sage\Wrapper;
           </div>
         <![endif]-->
 
-        <header class="main-head main-head--angle-bottom main-head--bg-color" id="top">
-          <?php
-            do_action('get_header');
-            get_template_part('_core/header');
-          ?>
-        </header>
+        <?php
+          do_action('get_header');
+          get_template_part('_core/header');
+        ?>
 
         <main id="main" class="main-torso wrapper">
             <?php include Wrapper\template_path(); ?>
         </main>
 
-        <footer class="main-foot main-foot--bg-drab">
-          <?php get_template_part('_core/footer'); ?>
-        </footer>
+        <?php get_template_part('_core/footer'); ?>
 
       </div>
 
