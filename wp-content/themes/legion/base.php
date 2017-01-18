@@ -29,9 +29,7 @@ use Roots\Sage\Wrapper;
         </header>
 
         <main id="main" class="main-torso wrapper">
-          <div class="main-torso__inner">
             <?php include Wrapper\template_path(); ?>
-          </div>
         </main>
 
         <footer class="main-foot">

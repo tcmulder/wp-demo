@@ -1,0 +1,41 @@
+/*------------------------------------*\
+    ::Slider Module
+\*------------------------------------*/
+.features-slider {
+    @include clearfix();
+    &__inner {
+        max-width: 970px;
+        margin-bottom: 100px;
+    }
+    &__slide {
+        width: 100%;
+        padding-bottom: 75%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    // plugin customizations for flickity
+    .dot {
+        width: 1.2em;
+        height: 1.2em;
+        margin: 0 1.2em;
+        background-color: $color-3;
+        opacity: 1;
+        transition: background-color 300ms;
+        &:hover {
+            background-color: $color-1--dark;
+        }
+        &.is-selected {
+            animation: blip 300ms;
+            background-color: $color-1--dark;
+        }
+        @keyframes blip {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

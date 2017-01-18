@@ -14,8 +14,8 @@
             background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="#{$color-3}" preserveAspectRatio="none" viewBox="0 0 1000 1000"><path d="M0 0h1000v1000"/></svg>');
             background-size: contain;
         }
-        & + .main-torso .main-torso__inner { // if it's an --angle-bottom the torso needs extra room for the angle
-            padding-top: 10em;
+        & + .main-torso .main-torso__group { // if it's an --angle-bottom the torso needs extra room for the angle
+            padding-top: 10rem;
         }
     }
     &__offset-title {
