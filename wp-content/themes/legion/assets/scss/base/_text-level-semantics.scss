@@ -30,8 +30,15 @@ dfn {
     }
 }
 %h1 {
+    $font-size: 6.5em;
     @extend %all-headings;
-    font-size: 6.5em;
+    font-size: $font-size;
+    @include bp($tab--max){
+        font-size: $font-size*.8;
+    }
+    @include bp($phone--max){
+        font-size: $font-size*.5;
+    }
 }
 %h2 {
     @extend %all-headings;
@@ -39,22 +46,50 @@ dfn {
     color: $color-1--light;
 }
 %h3 {
+    $font-size: 4.7em;
     @extend %all-headings;
-    font-size: 4.7em;
     letter-spacing: .1em;
+    font-size: $font-size;
+    @include bp($tab--max){
+        font-size: $font-size*.7;
+    }
+    @include bp($phone--max){
+        font-size: $font-size*.5;
+    }
 }
 %h4 {
+    $font-size: 2.3em;
     @extend %all-headings;
-    font-size: 2.3em;
+    font-size: $font-size;
+    @include bp($tab--max){
+        font-size: $font-size*.9;
+    }
+    @include bp($phone--max){
+        font-size: $font-size*.75;
+    }
 }
 %h5 {
+    $font-size: 2em;
     @extend %all-headings;
-    font-size: 2em;
+    font-size: $font-size;
+    @include bp($tab--max){
+        font-size: $font-size*.9;
+    }
+    @include bp($phone--max){
+        font-size: $font-size*.75;
+    }
 }
 %h6 {
+    $font-size: 1.8em;
     @extend %all-headings;
-    font-size: 1.8em;
     letter-spacing: -.01em;
+    font-size: $font-size;
+    @include bp($tab--max){
+        font-size: $font-size*.9;
+    }
+    @include bp($phone--max){
+        font-size: $font-size*.75;
+    }
 }
 // implementation
 h1{@extend %h1;}

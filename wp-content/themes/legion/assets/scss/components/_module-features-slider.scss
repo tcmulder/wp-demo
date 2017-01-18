@@ -14,15 +14,21 @@
         background-position: center;
     }
     // plugin customizations for flickity
+    .flickity-page-dots {
+        bottom: 1em;
+        @include bp($phone--max){
+            bottom: -.5em;
+        }
+    }
     .dot {
-        width: 1.2em;
-        height: 1.2em;
-        margin: 0 1.2em;
+        width: .9em;
+        height: .9em;
+        margin: 0 .9em;
         background-color: $color-3;
         opacity: 1;
         transition: background-color 300ms;
         @include bp($phone--mid){
-            margin: 0 5%;
+            margin: 0 3%;
         }
         &:hover {
             background-color: $color-1--dark;
