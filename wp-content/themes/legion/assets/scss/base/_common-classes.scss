@@ -1,6 +1,47 @@
 /*------------------------------------*\
     ::Common Classes
 \*------------------------------------*/
-[class*="--bg-dark"] {
+[class*="--bg-drab"] {
     background-color: $color-1--light;
+}
+[class*="--bg-color"] {
+    background-color: $color-3;
+}
+
+[class*="--angle-bottom"] {
+    position: relative;
+    z-index: 0;
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 100%;
+        width: 100%;
+        height: 10em;
+        color: red;
+        background-size: contain;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" preserveAspectRatio="none" viewBox="0 0 1000 1000"><path d="M0 0h1000v1000"/></svg>');
+    }
+    &[class*="--angle-reverse"]{
+        &:after {
+            transform: scale(-1, 1);
+        }
+    }
+    &[class*="--bg-drab"] {
+        &:after {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="#{$color-1--light}" preserveAspectRatio="none" viewBox="0 0 1000 1000"><path d="M0 0h1000v1000"/></svg>');
+        }
+    }
+    &[class*="--bg-color"] {
+        &:after {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="#{$color-3}" preserveAspectRatio="none" viewBox="0 0 1000 1000"><path d="M0 0h1000v1000"/></svg>');
+        }
+    }
+    & + .main-torso__group { // if it's an --angle-bottom the next group needs extra room for the angle
+        padding-top: 10rem;
+    }
+    [class*="__inner"] {
+        position: relative;
+        z-index: 20; // forces content above the angle
+    }
 }

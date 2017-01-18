@@ -1,4 +1,4 @@
-<article class="features-slider features-slider--bg-dark main-torso__group">
+<article class="features-slider main-torso__group main-torso__group--bg-drab main-torso__group--angle-bottom main-torso__group--angle-reverse">
     <div class="features-slider__inner">
         <div class="js-features-slider">
             <?php for ($i=1; $i <= 5; $i++) : ?>
@@ -8,8 +8,9 @@
                         // add user-selectable background images
                         $attr = array(
                             'images' => array(
-                                '(min-width: 801px)' => $slide_image['sizes']['large'],
-                                '(max-width: 800px)'  => $slide_image['sizes']['large']
+                                '(min-width: 801px)' => $slide_image['sizes']['hero'],
+                                '(max-width: 800px)'  => $slide_image['sizes']['two-third'],
+                                '(max-width: 500px)'  => $slide_image['sizes']['half']
                             )
                         );
                         // execute the function and store the resulting array

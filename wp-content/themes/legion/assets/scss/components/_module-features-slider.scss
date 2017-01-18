@@ -2,7 +2,6 @@
     ::Slider Module
 \*------------------------------------*/
 .features-slider {
-    @include clearfix();
     &__inner {
         max-width: 970px;
         margin-bottom: 100px;
@@ -22,6 +21,9 @@
         background-color: $color-3;
         opacity: 1;
         transition: background-color 300ms;
+        @include bp($phone--mid){
+            margin: 0 5%;
+        }
         &:hover {
             background-color: $color-1--dark;
         }
