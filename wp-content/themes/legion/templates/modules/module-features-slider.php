@@ -1,8 +1,11 @@
 <article class="features-slider main-torso__group main-torso__group--bg-drab main-torso__group--angle-bottom main-torso__group--angle-reverse">
     <div class="features-slider__inner">
+        <?php if(get_field('features_slider_title')) : ?>
+            <h3><?php the_field('features_slider_title'); ?></h3>
+        <?php endif; ?>
         <div class="js-features-slider">
             <?php for ($i=1; $i <= 5; $i++) : ?>
-                <?php $slide_image = get_field('image_'.$i); ?>
+                <?php $slide_image = get_field('features_slider_image_'.$i); ?>
                 <?php if ($slide_image) : ?>
                     <?php
                         // add user-selectable background images
