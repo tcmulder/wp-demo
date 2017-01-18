@@ -2,8 +2,10 @@
     ::Main Head
 \*------------------------------------*/
 .main-head {
-    height: 100vh;
-    background-color: $color-3;
+    height: 7em;
+    &--has-hero {
+        height: 100vh; // adds some space for pages without a hero
+    }
     &--angle-bottom {
         & + .main-torso .main-torso__group { // if it's an --angle-bottom the torso needs extra room for the angle
             padding-top: 10rem;

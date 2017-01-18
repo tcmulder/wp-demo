@@ -1,3 +1,6 @@
 /*------------------------------------*\
     ::Main Torso
 \*------------------------------------*/
+.main-torso__group {
+    padding: {left: $gap; right: $gap} // a little default breathing room
+}
