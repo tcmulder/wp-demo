@@ -192,7 +192,7 @@ var $options = {
         gulp.task('watch', function () {
             gulp.watch($options.javascript.main.input, ['scripts_main']);
             gulp.watch($options.sass.main.watch, ['sass_main']);
-            gulp.watch($options.php.watch, ['sass_main']);
+            gulp.watch($options.php.watch, ['php_main']);
         });
 
         // Task Groups (Development)
