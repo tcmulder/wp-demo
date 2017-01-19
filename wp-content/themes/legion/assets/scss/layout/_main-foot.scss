@@ -1,3 +1,19 @@
 /*------------------------------------*\
-    ::Main Footer
+  ::Main Footer
 \*------------------------------------*/
+@include sticky-footer(
+  $wrap: '.wrap-all-the-things',
+  $row:  '.main-head, .main-torso, .main-foot',
+  $flex: '.main-torso'
+);
+.main-foot {
+  box-shadow: 0 0 20px rgba(#000, .1) inset;
+  text-align: center;
+  background-color: $color-2--dark;
+  &__inner {
+    padding: $gap--big $gap;
+  }
+  h2 {
+    @extend %h6;
+  }
+}

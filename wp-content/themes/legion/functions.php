@@ -16,7 +16,8 @@ $sage_includes = [
   'lib/titles.php',  // Page titles
   'lib/wrapper.php',  // Theme wrapper class
   'lib/customizer.php',  // Theme wrapper class
-  
+  'lib/background.php',  // Responsive background function
+
     /* Penrose Specific functions */
     '/ap_lib/ap_custom.php',    				// General Custom Functions
     '/ap_lib/ap_google_fonts.php',       	// Activate Fonts

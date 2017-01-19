@@ -1,0 +1,72 @@
+/*------------------------------------*\
+  ::Grid Gallery Module
+\*------------------------------------*/
+.grid-gallery {
+  &__title {
+    margin-bottom: $gap--big;
+  }
+  &__frame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: {left: .5em; right: .5em;};
+  }
+  &__item {
+    position: relative;
+    width: calc(50% - #{$gap--baby/2}); // half on one side and half on the other
+    margin-bottom: $gap--baby;
+    padding-bottom: 42%; // height happens to equal the answer to life the universe and everything
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include bp($max: $phone--max){
+      width: 100%;
+      padding-bottom: 86%;
+    }
+    &--no-bg {
+      background-color: $color-1;
+    }
+  }
+  &__overlay {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    padding: $gap--baby;
+    opacity: 0;
+    font-size: 1.5em;
+    transition: 300ms;
+    @include bp($tab--mid){
+      font-size: 3vw;
+    }
+    // &, /* DEBUG */
+    &:hover {
+      opacity: 1;
+      background-color: rgba($color-1--light, .9);
+      span {
+        &:nth-child(odd){
+          transform: translateX(0);
+        }
+        &:nth-child(even){
+          transform: translateX(0);
+        }
+      }
+    }
+    span {
+      @extend %h4;
+      display: block;
+      width: 100%;
+      margin: 0;
+      letter-spacing: -.03em;
+      transition: transform 500ms;
+      &:nth-child(odd){
+        transform: translateX(+1em);
+      }
+      &:nth-child(even){
+        transform: translateX(-1em);
+      }
+    }
+  }
+}
