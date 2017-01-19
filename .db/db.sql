@@ -132,7 +132,7 @@ CREATE TABLE `d503h1e7s1_options` (
   `autoload` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=234 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=238 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -252,7 +252,7 @@ INSERT INTO `d503h1e7s1_options` VALUES (113,'_site_transient_browser_dff177876e
 INSERT INTO `d503h1e7s1_options` VALUES (114,'can_compress_scripts','1','no');
 INSERT INTO `d503h1e7s1_options` VALUES (132,'theme_mods_twentyseventeen','a:1:{s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1484423026;s:4:\"data\";a:4:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:9:\"sidebar-2\";a:0:{}s:9:\"sidebar-3\";a:0:{}}}}','yes');
 INSERT INTO `d503h1e7s1_options` VALUES (133,'current_theme','Legion','yes');
-INSERT INTO `d503h1e7s1_options` VALUES (134,'theme_mods_legion','a:3:{i:0;b:0;s:18:\"custom_css_post_id\";i:-1;s:18:\"nav_menu_locations\";a:1:{s:7:\"ap_main\";i:2;}}','yes');
+INSERT INTO `d503h1e7s1_options` VALUES (134,'theme_mods_legion','a:4:{i:0;b:0;s:18:\"custom_css_post_id\";i:-1;s:18:\"nav_menu_locations\";a:1:{s:7:\"ap_main\";i:2;}s:8:\"nav_logo\";s:52:\"http://localhost/wp-content/uploads/2017/01/logo.svg\";}','yes');
 INSERT INTO `d503h1e7s1_options` VALUES (135,'theme_switched','','yes');
 INSERT INTO `d503h1e7s1_options` VALUES (136,'recently_activated','a:0:{}','yes');
 INSERT INTO `d503h1e7s1_options` VALUES (137,'_site_transient_timeout_poptags_40cd750bba9870f18aada2478b24840a','1484434038','no');
@@ -278,8 +278,8 @@ INSERT INTO `d503h1e7s1_options` VALUES (202,'_transient_plugin_slugs','a:4:{i:0
 INSERT INTO `d503h1e7s1_options` VALUES (205,'custom_image_sizes','a:6:{s:12:\"medium_large\";a:5:{s:5:\"theme\";s:1:\"1\";s:1:\"w\";s:3:\"350\";s:1:\"h\";s:3:\"540\";s:1:\"n\";s:12:\"medium_large\";s:1:\"c\";s:1:\"0\";}s:5:\"third\";a:6:{s:6:\"custom\";s:1:\"1\";s:1:\"w\";s:3:\"350\";s:1:\"h\";s:3:\"540\";s:1:\"n\";s:5:\"Third\";s:1:\"c\";s:1:\"0\";s:1:\"s\";s:1:\"1\";}s:9:\"two-third\";a:6:{s:6:\"custom\";s:1:\"1\";s:1:\"w\";s:3:\"720\";s:1:\"h\";s:4:\"1024\";s:1:\"n\";s:9:\"Two-Third\";s:1:\"c\";s:1:\"0\";s:1:\"s\";s:1:\"1\";}s:7:\"quarter\";a:6:{s:6:\"custom\";s:1:\"1\";s:1:\"w\";s:3:\"255\";s:1:\"h\";s:3:\"255\";s:1:\"n\";s:7:\"Quarter\";s:1:\"c\";s:1:\"0\";s:1:\"s\";s:1:\"1\";}s:4:\"half\";a:6:{s:6:\"custom\";s:1:\"1\";s:1:\"w\";s:3:\"540\";s:1:\"h\";s:3:\"720\";s:1:\"n\";s:4:\"Half\";s:1:\"c\";s:1:\"0\";s:1:\"s\";s:1:\"1\";}s:4:\"hero\";a:5:{s:6:\"custom\";s:1:\"1\";s:1:\"w\";s:4:\"1440\";s:1:\"h\";s:3:\"720\";s:1:\"n\";s:4:\"Hero\";s:1:\"c\";s:1:\"0\";}}','yes');
 INSERT INTO `d503h1e7s1_options` VALUES (222,'footer_title','Minor Title','yes');
 INSERT INTO `d503h1e7s1_options` VALUES (223,'footer_text','Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur aliquet quam id dui posuere blandit. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Cras ultricies ligula sed magna dictum porta. Donec rutrum congue leo eget malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.','yes');
-INSERT INTO `d503h1e7s1_options` VALUES (232,'_site_transient_timeout_theme_roots','1484776399','no');
-INSERT INTO `d503h1e7s1_options` VALUES (233,'_site_transient_theme_roots','a:1:{s:6:\"legion\";s:7:\"/themes\";}','no');
+INSERT INTO `d503h1e7s1_options` VALUES (236,'_site_transient_timeout_theme_roots','1484786668','no');
+INSERT INTO `d503h1e7s1_options` VALUES (237,'_site_transient_theme_roots','a:1:{s:6:\"legion\";s:7:\"/themes\";}','no');
 /*!40000 ALTER TABLE `d503h1e7s1_options` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -298,7 +298,7 @@ CREATE TABLE `d503h1e7s1_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=646 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=652 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -309,7 +309,7 @@ LOCK TABLES `d503h1e7s1_postmeta` WRITE;
 /*!40000 ALTER TABLE `d503h1e7s1_postmeta` DISABLE KEYS */;
 INSERT INTO `d503h1e7s1_postmeta` VALUES (1,2,'_wp_page_template','default');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (2,2,'_edit_last','1');
-INSERT INTO `d503h1e7s1_postmeta` VALUES (3,2,'_edit_lock','1484776771:1');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (3,2,'_edit_lock','1484781894:1');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (4,5,'_menu_item_type','custom');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (5,5,'_menu_item_menu_item_parent','0');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (6,5,'_menu_item_object_id','5');
@@ -469,7 +469,7 @@ INSERT INTO `d503h1e7s1_postmeta` VALUES (187,32,'field_587f8627457b3','a:14:{s:
 INSERT INTO `d503h1e7s1_postmeta` VALUES (190,32,'position','normal');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (191,32,'layout','default');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (192,32,'hide_on_screen','a:2:{i:0;s:11:\"the_content\";i:1;s:14:\"featured_image\";}');
-INSERT INTO `d503h1e7s1_postmeta` VALUES (193,32,'_edit_lock','1484776650:1');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (193,32,'_edit_lock','1484781825:1');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (198,33,'hero_title','Build Something');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (199,33,'_hero_title','field_587e9ea283d53');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (200,33,'hero_sub_title','Beautiful');
@@ -899,6 +899,12 @@ INSERT INTO `d503h1e7s1_postmeta` VALUES (642,2,'grid_gallery_link_3','http://lo
 INSERT INTO `d503h1e7s1_postmeta` VALUES (643,2,'_grid_gallery_link_3','field_587fe48fcdcda');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (644,2,'grid_gallery_link_4','http://localhost/example-cta-page');
 INSERT INTO `d503h1e7s1_postmeta` VALUES (645,2,'_grid_gallery_link_4','field_587fe495cdcdb');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (646,51,'_wp_attached_file','2017/01/logo.svg');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (647,51,'_wp_attachment_image_alt','Logo');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (648,52,'_wp_trash_meta_status','publish');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (649,52,'_wp_trash_meta_time','1484783661');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (650,54,'_wp_trash_meta_status','publish');
+INSERT INTO `d503h1e7s1_postmeta` VALUES (651,54,'_wp_trash_meta_time','1484783737');
 /*!40000 ALTER TABLE `d503h1e7s1_postmeta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -938,7 +944,7 @@ CREATE TABLE `d503h1e7s1_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -992,6 +998,10 @@ INSERT INTO `d503h1e7s1_posts` VALUES (47,1,'2017-01-18 16:04:16','2017-01-18 16
 INSERT INTO `d503h1e7s1_posts` VALUES (48,1,'2017-01-18 17:01:01','2017-01-18 17:01:01','This is an example page. It\'s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\r\n<blockquote>Hi there! I\'m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like piña coladas. (And gettin\' caught in the rain.)</blockquote>\r\n...or something like this:\r\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\r\nAs a new WordPress user, you should go to <a href=\"http://localhost/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!','Home','','inherit','closed','closed','','2-revision-v1','','','2017-01-18 17:01:01','2017-01-18 17:01:01','',2,'http://localhost/uncategorized/2-revision-v1/',0,'revision','',0);
 INSERT INTO `d503h1e7s1_posts` VALUES (49,1,'2017-01-18 17:01:35','2017-01-18 17:01:35','This is an example page. It\'s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\r\n<blockquote>Hi there! I\'m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like piña coladas. (And gettin\' caught in the rain.)</blockquote>\r\n...or something like this:\r\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\r\nAs a new WordPress user, you should go to <a href=\"http://localhost/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!','Home','','inherit','closed','closed','','2-revision-v1','','','2017-01-18 17:01:35','2017-01-18 17:01:35','',2,'http://localhost/uncategorized/2-revision-v1/',0,'revision','',0);
 INSERT INTO `d503h1e7s1_posts` VALUES (50,1,'2017-01-18 21:58:13','2017-01-18 21:58:13','This is an example page. It\'s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\r\n<blockquote>Hi there! I\'m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like piña coladas. (And gettin\' caught in the rain.)</blockquote>\r\n...or something like this:\r\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\r\nAs a new WordPress user, you should go to <a href=\"http://localhost/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!','Home','','inherit','closed','closed','','2-revision-v1','','','2017-01-18 21:58:13','2017-01-18 21:58:13','',2,'http://localhost/uncategorized/2-revision-v1/',0,'revision','',0);
+INSERT INTO `d503h1e7s1_posts` VALUES (51,1,'2017-01-18 23:37:26','2017-01-18 23:37:26','','logo','','inherit','closed','closed','','logo','','','2017-01-18 23:37:52','2017-01-18 23:37:52','',0,'http://localhost/wp-content/uploads/2017/01/logo.svg',0,'attachment','image/svg+xml',0);
+INSERT INTO `d503h1e7s1_posts` VALUES (52,1,'2017-01-18 23:54:21','2017-01-18 23:54:21','{\n    \"legion::themeslug_logo\": {\n        \"value\": \"http://localhost/wp-content/uploads/2017/01/logo.svg\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    },\n    \"legion::nav_logo\": {\n        \"value\": \"http://localhost/wp-content/uploads/2017/01/placeholder-4.jpg\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    }\n}','','','trash','closed','closed','','d4cd96c4-9047-4449-b497-c410e06b280b','','','2017-01-18 23:54:21','2017-01-18 23:54:21','',0,'http://localhost/?p=52',0,'customize_changeset','',0);
+INSERT INTO `d503h1e7s1_posts` VALUES (53,1,'2017-01-18 23:55:27','0000-00-00 00:00:00','{\n    \"legion::nav_logo\": {\n        \"value\": \"\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    }\n}','','','auto-draft','closed','closed','','122f277a-e8d9-49dd-82f6-0035dcf0dc59','','','2017-01-18 23:55:27','0000-00-00 00:00:00','',0,'http://localhost/?p=53',0,'customize_changeset','',0);
+INSERT INTO `d503h1e7s1_posts` VALUES (54,1,'2017-01-18 23:55:37','2017-01-18 23:55:37','{\n    \"legion::nav_logo\": {\n        \"value\": \"http://localhost/wp-content/uploads/2017/01/logo.svg\",\n        \"type\": \"theme_mod\",\n        \"user_id\": 1\n    }\n}','','','trash','closed','closed','','8acfb975-a5e9-4dc9-983b-35f7d223fae0','','','2017-01-18 23:55:37','2017-01-18 23:55:37','',0,'http://localhost/uncategorized/8acfb975-a5e9-4dc9-983b-35f7d223fae0/',0,'customize_changeset','',0);
 /*!40000 ALTER TABLE `d503h1e7s1_posts` ENABLE KEYS */;
 UNLOCK TABLES;
 
