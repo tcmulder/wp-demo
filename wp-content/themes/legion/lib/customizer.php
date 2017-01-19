@@ -5,6 +5,7 @@ namespace Roots\Sage\Customizer;
 use Roots\Sage\Assets;
 
 use WP_Customize_Control;
+use WP_Customize_Image_Control;
 
 /**
  * Add postMessage support
@@ -63,3 +64,24 @@ function footer_customizer($wp_customize) {
 function sanitize_text($text) {
     return sanitize_text_field($text);
 }
+
+/**
+ * Logo
+ */
+function logo_customizer( $wp_customize ) {
+    $wp_customize->add_section( 'nav_logo_section' , array(
+        'title'       => 'Logo',
+        'priority'    => 30,
+        'description' => 'Upload a logo used in the header',
+    ) );
+
+    $wp_customize->add_setting( 'nav_logo' );
+
+    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'nav_logo', array(
+        'label'    => 'Logo',
+        'section'  => 'nav_logo_section',
+        'settings' => 'nav_logo',
+        'extensions' => array( 'jpg', 'jpeg', 'gif', 'png', 'svg' )
+    ) ) );
+}
+add_action( 'customize_register', __NAMESPACE__ . '\\logo_customizer' );

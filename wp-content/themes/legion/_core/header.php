@@ -5,6 +5,17 @@
           <span><!-- but what can you do? ¯\_(ツ)_/¯  --></span>
           <span><!-- it looks so cool ┻━┻︵ \(°□°)/ ︵ ┻━┻ --></span>
       </a>
+      <?php if ( get_theme_mod( 'nav_logo' ) ) : ?>
+        <a href='<?php echo site_url(); ?>' title='Home' rel='home' class="nav-head__logo">
+          <?php
+            // include the SVG code, not just an <img> for styling purposes
+            $image_url = get_theme_mod('nav_logo');
+            $image_id = attachment_url_to_postid($image_url);
+            $image_path = get_attached_file($image_id);
+          ?>
+          <?php include($image_path); ?>
+        </a>
+      <?php endif; ?>
       <?php
         $attr = array(
           'container_class' => 'nav-head__wrap',

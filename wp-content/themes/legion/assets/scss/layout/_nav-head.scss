@@ -2,6 +2,26 @@
   ::Main Nav (header)
 \*------------------------------------*/
 .nav-head {
+  &__logo {
+    position: fixed;
+    z-index: 20;
+    display: inline-block;
+    left: 50%;
+    top: 1em;
+    width: 5.2em;
+    height: 5.2em;
+    perspective: 800px;
+    transform: translateX(-50%);
+    &:hover {
+      path {
+        fill: $color-1--light;
+      }
+    }
+    path { // svg path
+      fill: $color-1--dark;
+      transition: fill 300ms;
+    }
+  }
   &__wrap {
     overflow: hidden;
     position: fixed;
@@ -33,6 +53,7 @@
       z-index: 10;
       overflow-y: auto;
       margin: 0;
+      padding: 0;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
@@ -57,13 +78,16 @@
       text-align: center;
       font-size: 7em;
       color: $color-1--light;
+      &:hover{
+        color: $color-3;
+      }
       @include bp($tab--mid){
         font-size: 15vw;
       }
     }
     // active nav
-    // .nav-head__trigger + &, /* DEBUG */
-    .nav-head__trigger.active + & {
+    // .nav-head__trigger ~ &, /* DEBUG */
+    .nav-head__trigger.active ~ & {
       height: 100vh;
       &:after {
         top: 0;
@@ -82,6 +106,21 @@
       }
     }
   }
+  // active logo
+  &__logo {
+    // .nav-head__trigger + &, /* DEBUG */
+    .nav-head__trigger.active + & {
+      &:hover {
+        path {
+          fill: $color-3;
+        }
+      }
+      path { // svg path
+        fill: $color-1--light;
+        transition: fill 300ms;
+      }
+    }
+  }
 }
 
 // "hamburger"
@@ -94,6 +133,11 @@
   height: 7em;
   padding-top: 4.2em;
   background-color: rgba(#fff,.06);
+  &:hover {
+    span {
+      background-color: $color-1--light;
+    }
+  }
   span {
     position: absolute;
     top: 50%;
